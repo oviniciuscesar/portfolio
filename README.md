@@ -1,8 +1,5 @@
-# Vinícius Cesar de Oliveira
-Composer/researcher
-
 ### Bio
-Vinícius Cesar de Oliveira holds a Bachelor’s in Music Composition (2018) and a Master’s in Creative Processes (2022) from the University of Campinas (Unicamp), where he is currently a Ph.D. candidate in Music under the supervision of Prof. Dr. José Henrique Padovani. His research explores the implementation, creative exploration, and development of compositional strategies using new technologies, such as Music Information Retrieval (MIR), Machine Listening, and Machine learning algorithms applied to live electronics music. As a composer, he focuses on instrumental music with special interest in the interaction between instrumental writing and real-time and interactive processes. His works have been awarded and performed by renowned ensembles and soloists, including: OSU (Unicamp Symphony Orchestra), Rodrigo Frade (flutist), and Roger Admiral (Canadian pianist).
+Vinícius Cesar de Oliveira holds a Bachelor’s in Music Composition (2018) and a Master’s in Creative Processes (2022) from the University of Campinas (Unicamp), where he is currently a Ph.D. candidate in Music under the supervision of Prof. Dr. José Henrique Padovani. His research explores the implementation, creative exploration, and development of compositional strategies using new technologies, such as Music Information Retrieval (MIR), Machine Listening, and Machine learning algorithms applied to live electronics music. As a composer, he focuses on instrumental music with a special interest in the interaction between instrumental writing and real-time and interactive processes. His works have been awarded and performed by renowned ensembles and soloists, including OSU (Unicamp Symphony Orchestra), Rodrigo Frade (flutist), and Roger Admiral (Canadian pianist).
 He has participated in masterclasses with leading figures in contemporary music such as Philippe Manoury, Unsuk Chin, Flo Menezes, and Gregory Mertl. 
 
 
