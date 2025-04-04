@@ -1,22 +1,9 @@
-# title: Vinícius Cesar de Oliveira
-# logo: assets/img/1666933146584.jpg
-# description: |
-#   composer/researcher
-#   oviniciuscesar@gmail.com
-# #show_downloads: true
-# theme: jekyll-theme-minimal
-
-
-title: "Vinícius Cesar"
-description: "Compositor e Pesquisador em Música Computacional"
-logo: "/assets/img/1666933146584.jpg"
+title: Vinícius Cesar de Oliveira
+logo: assets/img/1666933146584.jpg
+description: |
+  composer/researcher
+  oviniciuscesar@gmail.com
+#show_downloads: true
 theme: jekyll-theme-minimal
 
-# Permite SCSS
-sass:
-  sass_dir: assets/css
-  style: compressed
 
-# Disable theme assets we're replacing
-theme_config:
-  skip_assets: true
