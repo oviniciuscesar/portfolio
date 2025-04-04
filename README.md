@@ -27,7 +27,7 @@ Description: Examines the interplay between poetic imagery, technical tools, and
 Collaborators: Thales Roel Pessanha (Researcher).
 
 - Machine Listening in Live-Electronics (2019–2022, MA Thesis)
-Description: Investigated compositional strategies using ML/MIR in live-electronics, culminating in a work for guitar and real-time electronics.
+Description: Investigate compositional strategies using ML/MIR in live-electronics, culminating in a work for guitar and real-time electronics.
 
 - Berio’s Instrumental Writing (2016–2017)
 Description: Analyzed the compositional unfolding from Sequenza VII to Chemins IV (Luciano Berio).
