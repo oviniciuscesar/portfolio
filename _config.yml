@@ -16,3 +16,7 @@ theme: jekyll-theme-minimal
 sass:
   sass_dir: assets/css
   style: compressed
+
+# Disable theme assets we're replacing
+theme_config:
+  skip_assets: true
