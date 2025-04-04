@@ -3,18 +3,15 @@ Vinícius Cesar de Oliveira holds a Bachelor’s in Music Composition (2018) and
 He has participated in masterclasses with leading figures in contemporary music such as Philippe Manoury, Unsuk Chin, Flo Menezes, and Gregory Mertl. 
 
 
-### Research Focus
+### Research lines
 - Musical Composition
-Objective: Artistic and analytical research in contemporary composition, focusing on instrumental and live-electronics works. Combines academic study of 20th/21st-century repertoire with creative practice.
-Keywords: Contemporary Music, Concert Music, Instrumental/Vocal Writing, Live Electronics.
+#Objective: Artistic and analytical research in contemporary composition, focusing on instrumental and live-electronics works. Combines academic study of 20th/21st-century repertoire with creative practice
 
-- Music Analysis
+- Musical Analysis
 Objective: Computational modeling of compositional techniques; analysis of instrumental/electroacoustic works across historical periods.
-Keywords: Electroacoustic Music, Compositional Analysis, Computational Modeling.
 
 - Algorithmic Composition
-Objective: Exploration of computational methods (machine learning, MIR) applied to instrumental and technology-aided composition.
-Keywords: Algorithmic Music, Machine Listening, Interactive Systems.
+Objective: Exploration of computational methods and new technologies applied to instrumental and mixed music composition.
 
 ### Research Projects
 - Creative appropriation of machine listening and machine learning algorithms aimed at the compositional practice of live electronics (2022–Present)
