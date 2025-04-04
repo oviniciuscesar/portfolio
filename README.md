@@ -10,9 +10,11 @@ He has participated in masterclasses with leading figures in contemporary music 
 - Musical Composition
 Objective: Artistic and analytical research in contemporary composition, focusing on instrumental and live-electronics works. Combines academic study of 20th/21st-century repertoire with creative practice.
 Keywords: Contemporary Music, Concert Music, Instrumental/Vocal Writing, Live Electronics.
+
 - Music Analysis
 Objective: Computational modeling of compositional techniques; analysis of instrumental/electroacoustic works across historical periods.
 Keywords: Electroacoustic Music, Compositional Analysis, Computational Modeling.
+
 - Algorithmic Composition
 Objective: Exploration of computational methods (machine learning, MIR) applied to instrumental and technology-aided composition.
 Keywords: Algorithmic Music, Machine Listening, Interactive Systems.
@@ -25,15 +27,18 @@ Theoretical/conceptual study of machine listening and machine learning in music.
 Implementation of algorithms and compositional process.
 Creative application in compositional projects.
 Role: Principal Investigator (PhD Research).
+
 - Technical Objects & Creation in Mixed Music (2020–Present)
 Description: Examines the interplay between poetic imagery, technical tools, and musical realization in mixed/interactive music, drawing on Gilbert Simondon’s philosophy.
 Collaborators: Thales Roel Pessanha (Researcher).
-Completed Projects
+
 - Machine Listening in Live-Electronics (2019–2022, MA Thesis)
 Description: Investigated compositional strategies using ML/MIR in live-electronics, culminating in a work for guitar and real-time electronics.
+
 - Berio’s Instrumental Writing (2016–2017)
 Description: Analyzed the compositional unfolding from Sequenza VII to Chemins IV (Luciano Berio).
 Funding: FAPESP (Undergraduate Research Grant).
+
 - Polyphonic Simulation in Berio & Bach (2015–2017)
 Description: Comparative study of latent polyphony in Bach’s violin works and Berio’s Sequenze.
 
