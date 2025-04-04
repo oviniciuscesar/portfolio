@@ -2,8 +2,8 @@
 Composer/researcher
 
 ### Bio
-Vinícius Cesar de Oliveira holds a Bachelor’s in Music Composition (2018) and a Master’s in Creative Processes (2022) from the University of Campinas (Unicamp), where he is currently a Ph.D. candidate in Music under the supervision of Prof. Dr. José Henrique Padovani. His research explores the implementation, creative exploration and the development of compositional strategies using new technologies, such as Music Information Retrieval (MIR), Machine Listening and Machine learning algorithms applied to live electronics music. As a composer, he focuses on instrumental muisc with special interesting in the interaction between instrumental writing and real time and interactive processes. His works have been awarded and performed by renowned ensembles and soloists, including: OSU (Unicamp Symphony Orchestra), Rodrigo Frade (flutist) and Roger Admiral (Canadian pianist).
-He has participated in masterclasses with leading figures in contemporary music such as Philippe Manoury, Unsuk Chin, Flo Menezes and Gregory Mertl. 
+Vinícius Cesar de Oliveira holds a Bachelor’s in Music Composition (2018) and a Master’s in Creative Processes (2022) from the University of Campinas (Unicamp), where he is currently a Ph.D. candidate in Music under the supervision of Prof. Dr. José Henrique Padovani. His research explores the implementation, creative exploration, and development of compositional strategies using new technologies, such as Music Information Retrieval (MIR), Machine Listening, and Machine learning algorithms applied to live electronics music. As a composer, he focuses on instrumental music with special interest in the interaction between instrumental writing and real-time and interactive processes. His works have been awarded and performed by renowned ensembles and soloists, including: OSU (Unicamp Symphony Orchestra), Rodrigo Frade (flutist), and Roger Admiral (Canadian pianist).
+He has participated in masterclasses with leading figures in contemporary music such as Philippe Manoury, Unsuk Chin, Flo Menezes, and Gregory Mertl. 
 
 
 ### Research Focus
@@ -17,9 +17,9 @@ Keywords: Electroacoustic Music, Compositional Analysis, Computational Modeling.
 Objective: Exploration of computational methods (machine learning, MIR) applied to instrumental and technology-aided composition.
 Keywords: Algorithmic Music, Machine Listening, Interactive Systems.
 
-###Research Projects
+### Research Projects
 - Creative appropriation of machine listening and machine learning algorithms aimed at the compositional practice of live electronics (2022–Present)
-Description: Develop and adapt machine listening and machine learning algorithms and explore them compositionaly.
+Description: Develop and adapt machine listening and machine learning algorithms and explore their compositionally.
 Approach:
 Theoretical/conceptual study of machine listening and machine learning in music.
 Implementation of algorithms and compositional process.
