@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Biblioteca principal do p5.js -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script> -->
+     
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="src/conf/sketch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinícius C. Oliveira</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+
+</head>
+
+
+<body>
+    <div class="header_section">
+        <nav>
+            <div class="logo">
+                <img src="src/images/logo8_trans.png" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Compositions</a></li>
+                <li><a href="#">Researches</a></li>
+                <li><a href="#">Algorithms</a></li>
+                <!-- <li><a href="#">About</a></li> -->
+            </ul>
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+       
+            <div class="client_info">
+              <h2>Vinícius Cesar de Oliveira</h2>
+              <p id="bio-text">
+                Vinícius is a composer and researcher who works in the areas of composition, sonology, and analysis. His music explores the interaction between instrumental writing and real-time interactive systems.
+                As a researcher, his interest is in the creative exploration of new technology and its intersection with music composition. Has been participating in masterclasses with leading composers of today, like Philippe Manoury and Unsuk Chin.
+              </p>
+            
+            
+            <!-- redes sociais -->
+            <div class="icon">
+                <li><a href="https://www.youtube.com/@viniciusoliveira7416"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://soundcloud.com/vinicius-cesar-oliveira?fbclid=PAZXh0bgNhZW0CMTEAAacsu-Kmmi9_HH09sZBJmyGFKQm558Fe_lNgToveZ_rCkOkRI83g-IZYEjpwPw_aem_BYNSuAs9qFz9NtTOAuMpdg"><i class="fa-brands fa-soundcloud"></i></a></li>
+                <li><a href="https://github.com/oviniciuscesar"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.researchgate.net/profile/Vinicius-Cesar-2?ev=hdr_xprf"><i class="fa-brands fa-researchgate"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/vin%C3%ADcius-cesar-oliveira-82a074228/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="mailto:oviniciuscesar@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="http://lattes.cnpq.br/4983693580063613" target="_blank" title="CV Lattes" class="cv-lattes-link">CV Lattes</a></li>
+            </div>
+        </div>
+    </div>
+
+    <!-- AQUI está o canvas como plano de fundo -->
+    <canvas id="bg-canvas"></canvas>
+
+    <div id="section-label">HOME</div>
+    <!-- Área onde o conteúdo será carregado -->
+    <div id="content" class="content-section">
+        <!-- <h2>Welcome!</h2>
+        <p>Select a menu option to see content.</p> -->
+    </div>
+
+    <!-- Seção Compositions (inicialmente oculta) -->
+    <section id="compositions" class="content-section hidden">
+        <!-- <div class="vertical-text">Vinícius Cesar de Oliveira</div> -->
+        <div class="vertical-text" id="verticalText">Vinícius Cesa de Oliveira</div>
+
+        <div class="section-title">
+            <h2>Compositions</h2>
+            <span class="watermark">Music</span>
+            </div>
+        
+    
+        <!-- do corpo ao pó -->
+        <div class="composition">
+            <h3>Do corpo ao pó</h3>
+            <ul class="composition-meta">
+              <li><strong>Year:</strong> 2022</li>
+              <li><strong>Instrumentation:</strong> Classical guitar and live electronics</li>
+              <li><strong>Premiere:</strong> October 27, 2022 — XXX Panorama da Música Brasileira Atual, Rio de Janeiro</li>
+            </ul>
+
+            <p class="composition-description">
+                The title of the piece refers to the work <em>Do corpo ao pó: crônicas da territorialidade Kaiowá e Guarani nas adjacências da morte</em>, by anthropologist Bruno Morais, 
+                which addresses the genocide of the Kaiowá and Guarani peoples in Mato Grosso do Sul and explores their relationships with the land and the body, whether alive or dead, as inseparable aspects of territoriality. 
+                Morais investigates two concepts of territory: the first, rooted in the indigenous vision, and the second, the expression <em>tekoha</em>, affected by state policies that imposed specific borders on these peoples. 
+                Bringing this poetic image to the context of the creation, the aim was to evoke metaphors that refer to these relationships as well as to the notion of territoriality described above. 
+                Whether in the relationships established between interactive processes and instrumental gestures or in the structuring and development of musical materials at the micro and macro levels, 
+                different developments of this metaphor were used in the conception of the piece.
+            </p>
+            
+          <div class="composition-recordings">
+            <h4>Recordings:</h4>
+            
+            <div class="recording">
+              <p>🎼 <strong>Video score:</strong></p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/FYxJW0c3U1Q" 
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      allowfullscreen></iframe>
+                <p>Classical guitar: Gabriel Angelo</p>
+                <p>Live electronics: Vinícius César de Oliveira</p>
+            </div>
+        
+            <div class="recording">
+              <p>🎼 <strong>Studio recording:</strong></p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/uRvoQNiCDIo" 
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      allowfullscreen></iframe>
+                <p>Classical guitar: Gabriel Angelo</p>
+                <p>Live electronics: Vinícius César de Oliveira</p>
+            </div>
+        
+            <div class="recording">
+              <p>🎼 <strong>Premiere:</strong></p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/4u6jGI8OxSA" 
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      allowfullscreen></iframe>
+                <p>Classical guitar: Gabriel Angelo</p>
+                <p>Live electronics: Vinícius César de Oliveira</p>
+            </div>
+        
+          </div>
+        </div>
+        
+        <div class="composition">
+            <h3>Eutropia I</h3>
+            <ul class="composition-meta">
+              <li><strong>Year:</strong> 2021</li>
+              <li><strong>Instrumentation:</strong> Solo flute</li>
+              <li><strong>Premiere:</strong> September, 2021 — festival <em>Escuta aqui!</em></li>
+            </ul>
+            <p class="composition-description">
+              <em>Eutropia I</em>, for solo flute, is the first in a series of five pieces for different instruments and ensembles ranging from solo instruments and duos to small chamber groups and live electronics. 
+              The conception of Eutropia I, as well as the other pieces in this cycle, is based on the poetic image created by Italo Calvino in <em>Invisible Cities</em>. 
+              <em>Eutropia</em>, one of the cities described by Marco Polo to Emperor Kublai Khan, is actually five cities, of which only one is inhabited at a time. 
+              Each time its inhabitants move to one of the empty neighboring cities. Along with this move, new relationships are established between its inhabitants and between the new city. 
+              Each of the five pieces in the cycle will function as one of the five cities, one unfolding and transforming itself from the materials of the previous one through processes of rewriting; 
+              citation; translation; expansion; unfolding; transcription; commentary; and reflection, among others, carried out on the original material itself and also on the compositional process as a whole.
+            </p>
+          
+            <div class="composition-recordings">
+              <h4>Recordings:</h4>
+          
+              <div class="recording">
+                <p>🎼 <strong>Premiere:</strong></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/i7QZM-jmdjY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen></iframe>
+                <p>Flute: Rodrigo Frade</p>
+              </div>
+          
+              <div class="recording">
+                <p>🎼 <strong>Video score:</strong></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5TnrbvAtq50"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                <p>Flute: Rodrigo Frade</p>
+              </div>
+          
+            </div>
+          </div>
+          
+          <div class="composition">
+            <h3>MetaMorfema</h3>
+            <ul class="composition-meta">
+                <li><strong>Year:</strong> 2017</li>
+                <li><strong>Instrumentation:</strong> Orchestra</li>
+                <li><strong>Premiere:</strong> November 16, 2017 — <em>Young Musicians Competition Concert</em></li>
+            </ul>
+            <p class="composition-description">
+                <em>MetaMorfema</em> was composed between February and August 2017 and premiered on November 16 of the same year by the Unicamp Symphony Orchestra, during the “Young Musicians OSU” concert. 
+                The work won the Young Musicians OSU competition in 2017. Its poetic concept is based on a brief fragment from the beginning of the first movement of Beethoven's Ninth Symphony, reinterpreted here as a “morpheme” — 
+                the smallest unit capable of expressing meaning, about the term from linguistics. The proposal was to transform this fragment to generate new materials that, despite the metamorphoses, would preserve certain original characteristics. 
+                The piece develops through various types of transformation applied to the initial fragment, such as expansion, contraction, rhythmic rotation, and retrogradation. It is from this process of metamorphosis of the “compositional atom” 
+                that the title <em>MetaMorpheme</em> emerges, in allusion to the act of transformation that structures the work.
+            </p>
+        
+            <div class="composition-recordings">
+                <h4>Recordings:</h4>
+                <div class="recording">
+                    <p>🎼 <strong>Video score:</strong></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/F2MAovMR034" 
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                    <p>Orquestra Sinfônica da Unicamp</p>
+                    <p>Regência: Paula Gabriela de Sant’Ana</p>
+                </div>  
+        
+                <div class="recording">
+                    <p>🎼 <strong>Premiere:</strong></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QeRzvCax4oE" 
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                    <p>Orquestra Sinfônica da Unicamp</p>
+                    <p>Regência: Paula Gabriela de Sant’Ana</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="composition">
+            <h3>Espasmos</h3>
+            <ul class="composition-meta">
+                <li><strong>Year:</strong> 2017</li>
+                <li><strong>Instrumentation:</strong> Trombone and live electronics</li>
+                <li><strong>Premiere:</strong> November 23, 2017</li>
+            </ul>
+            <p class="composition-description">
+                Composed between December 2016 and April 2017, <em>Espasmos</em> is dedicated to trombonist Daniel Soares. The piece explores the proliferation of small impulses and gestures, performed by the trombone and transformed in real time by live electronics. 
+                The trombone's melodic material undergoes contractions and expansions, being processed and spatialized in four channels around the audience. The work's title refers to these brief gestures and impulses, marked by constant temporal and melodic variations. 
+                The electronics interact with the instrumental writing on three distinct levels: spectral, structural, and spatial. On the spectral plane, there is real-time processing of the trombone's sound spectrum; on the structural plane, the electronics construct 
+                the entire last section of the piece from processed sounds of the instrument; on the spatial plane, these sounds are projected in quadraphonic space. The instrumental writing is based on harmonic-melodic material derived from a Gesualdo melody, manipulated through Pousseur's harmonic networks to generate new materials. 
+                These materials are then subjected to variations, being expanded and contracted in different registers, preserving their intervallic relationships. Real-time electronics use four main types of processing of the trombone sound: spectral delay, 
+                freeze, harmonizer, time stretch, and granular processes, each associated with specific spatial trajectories.
+            </p>
+        
+            <div class="composition-recordings">
+                <h4>Recordings:</h4>
+                <div class="recording">
+                    <p>🎼 <strong>Video score:</strong></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MaZGIpWxLuo" 
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                    <p>Trombone: Daniel Soares</p>
+                    <p>Live electronics: Vinícius César de Oliveira</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nas curvas do espaço-tempo... -->
+        <div class="composition">
+            <h3>Nas curvas do espaço-tempo...</h3>
+            <ul class="composition-meta">
+                <li><strong>Year:</strong> 2016</li>
+                <li><strong>Instrumentation:</strong> Acousmatic music for four channels</li>
+                <li><strong>Premiere:</strong> September 19, 2016 - Contestações Eletroacústicas, auditorium of the Institute
+                    of Arts, Unicamp</li>
+            </ul>
+            <p class="composition-description">
+                Composed between June and September 2016 for the acousmatic music concert <em>Contestações Eletroacústcas</em>, this piece is inspired by the first direct observation of gravitational waves, which occurred on September 14, 2015.
+                The title of the work refers to this scientific milestone, seeking to express, in sounds, the dynamics and complexity of this phenomenon. 
+                The piece evokes the vastness and depth of space-time, while proposing a poetic reflection on the invisible forces that shape the universe.
+            </p>
+        
+            <div class="composition-recordings">
+                <h4>Recordings:</h4>
+                <div class="recording">
+                    <p>🎼 <strong>Video score:</strong></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5sCrNvBqkt4" 
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                    <p>Electroacoustic diffusion: Vinícius Cesar de Oliveira</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- (Re)síntese -->
+        <div class="composition">
+            <h3>(Re)síntese</h3>
+            <ul class="composition-meta">
+                <li><strong>Year:</strong> 2016</li>
+                <li><strong>Instrumentation:</strong> Flute, Vibraphone and Viola</li>
+                <li><strong>Premiere:</strong> June 2, 2016 - First edition of Descompasso, ADUNICAMP auditorium</li>
+            </ul>
+            <p class="composition-description">
+                (Re)Synthesis explores the idea of music creation as a process that is developed in three phases: perception, analysis, and synthesis. This concept guided the choice and development of the materials that structure the work. 
+                The initial material for this piece was inspired by a harmonic set of notes taken from a work by Pierre Boulez. This harmonic structure stands out in the texture of the composition, marking the starting point for perception. 
+                From this element, the sonic possibilities of the harmonic group were explored in a process of analysis, revealing its potential. Based on Markov chain techniques, this original material was transformed, resulting in a new structure, 
+                which served as the main material for the synthesis — and composition of the piece. However, this is not a simple citation, but a creative process in which archetypes are transformed to give rise to new structures while preserving 
+                a reference to their origin — a process of “(Re)Synthesis”. What was previously, in Boulez, a harmonic aggregate, here assumes a new identity within a distinct universe.
+            </p>
+        
+            <div class="composition-recordings">
+                <h4>Recordings:</h4>
+                <div class="recording">
+                    <p>🎼 <strong>Premiere:</strong></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/I2mwY87MdoI" 
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                    <p>Flute: Felipe Santos</p>
+                    <p>Viola: Roberto Mochetti</p>
+                    <p>Vibraphone: Angelo Benítez</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- A epistemologia do Som -->
+        <div class="composition">
+            <h3>A epistemologia do SOM</h3>
+            <ul class="composition-meta">
+                <li><strong>Year:</strong> 2015</li>
+                <li><strong>Instrumentation:</strong> Piano</li>
+                <li><strong>Premiere:</strong> August 18, 2015 - Second edition of Curto-Circuito de Música Contemporânea</li>
+            </ul>
+            <p class="composition-description">
+                This piece was composed during the masterclasses and workshops of the second edition of the Curto-Circuito de Música Contemporânea and premiered by Canadian pianist Roger Admiral. 
+                The title symbolizes the deep search for sounds, investigating their characteristics and revealing their expressive and creative potential. With each arpeggiated chord, it is as if new layers are uncovered, 
+                revealing unexpected sound nuances and new colors, diving into the musical and poetic exploration of the sound material.
+            </p>
+        
+            <div class="composition-recordings">
+                <h4>Recordings:</h4>
+                <div class="recording">
+                    <p>🎼 <strong>Premiere:</strong></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uvAkmB1qZo4" 
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+                    <p>Piano:Roger Admiral</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Seção Researches -->
+    <section id="researches" class="hidden">
+        <div class="section-title">
+        <h2>Research</h2>
+        <span class="watermark">Papers</span>
+        </div>
+  
+        <!-- artigo 1 -->
+        <div class="composition">
+            <h3>Map, Trigger, Score, Procedure: machine-listening paradigms in live-electronics</h3>
+            <ul class="composition-meta">
+              <li><strong>Authors:</strong> Vinícius Cesar de Oliveira,José Henrique Padovani</li>
+              <li><strong>Type:</strong> Paper</li>
+              <li><strong>Journal:</strong> Revista Vortex</li>
+            </ul>
+            <p class="composition-description">
+                Since the advent of real-time computer music environments, composers have increasingly incorporated DSP analysis, synthesis, and processing algorithms in their creative practices. 
+                Those processes became part of interactive systems that use real-time computational tools in musical compositions that explore diverse techniques to generate, spatialize, and process instrumental/vocal sounds. 
+                Parallel to the development of these tools and the expansion of DSP methods, new techniques focused on sound/musical information extraction became part of the tools available for music composition. 
+                In this context, this article discusses the creative use of Machine Listening and Musical Information Retrieval techniques applied in the composition of live-electronics works. 
+                By pointing out some practical applications and creative approaches, we aim to circumscribe, in a general way, the strategies for employing Machine Listening and Music Information Retrieval 
+                techniques observed in a set of live-electronics pieces, categorizing four compositional approaches, namely: mapping, triggering, scoring, and procedural paradigms of application of 
+                machine listening techniques in the context of live-electronics music compositions.
+            </p>
+          
+            <!-- Links com ícones -->
+            <div class="research-buttons">
+              <a href="src/pdf/4691-12636-1-SM.pdf" download target="_blank"><i class="fas fa-file-pdf"></i></a>
+              <a href="https://www.researchgate.net/publication/360264886_Map_Trigger_Score_Procedure_machine-listening_paradigms_in_live-electronics" target="_blank"><i class="fab fa-researchgate"></i></a>
+            </div>
+          
+            <!-- PDF Preview dentro da composição -->
+            <div class="pdf-preview">
+              <iframe src="src/pdf/4691-12636-1-SM.pdf#page=1" width="100%" height="600px" style="border: none;"></iframe>
+            </div>
+          </div>
+
+        
+           <!-- artigo 2 -->
+        <div class="composition">
+            <h3>Some Compositional Approaches in the Practice of live- electronic music from the perspective of technique and technological tools</h3>
+            <ul class="composition-meta">
+              <li><strong>Authors:</strong> Vinícius Cesar de Oliveira, Thales Roel</li>
+              <li><strong>Type:</strong> Paper</li>
+              <li><strong>Journal:</strong> Revista Vórtex</li>
+            </ul>
+            <p class="composition-description">
+                Tools and their technical frameworks impact directly the compositional processes, thus, placing itself as an element of fundamental importance, 
+                either in the conception of poetic ideas and images or in the technical realization of a work. In this sense, the present work aims to discuss some aspects of the correlation between technics, 
+                poetics, aesthetics, and musical writing in the context of interactive/live-electronics music. This takes place from a dialogue between the ideas of authors and composers, 
+                such as Gilbert Simondon, Helmut Lachenmann, and Pierre Boulez about technical frameworks and their implications in musical practice. 
+                Thus, we aim to discuss the interrelation between technological devices, musical elements, and poetic images, which are established within the compositional process. 
+                These reflections will serve as a theoretical field to introduce and describe some characteristics about compositional thinking of two-piece: 
+                “Espasmos” (2017), for trombone and liveelectronics, by Vinicius Cesar, and “Caminhos queue Levam” (2018), for clarinet and live-electronics, by Thales Roel.
+            </p>
+          
+            <!-- Links com ícones -->
+            <div class="research-buttons">
+              <a href="src/pdf/oliveira_pessanha_v9_n3.pdf" download target="_blank"><i class="fas fa-file-pdf"></i></a>
+              <a href="https://www.researchgate.net/publication/358564337_Some_Compositional_Approaches_in_the_Practice_of_live-_electronic_music_from_the_perspective_of_technique_and_technological_tools" target="_blank"><i class="fab fa-researchgate"></i></a>
+            </div>
+          
+            <!-- PDF Preview dentro da composição -->
+            <div class="pdf-preview">
+              <iframe src="src/pdf/oliveira_pessanha_v9_n3.pdf#page=2" width="100%" height="600px" style="border: none;"></iframe>
+            </div>
+          </div>
+
+        <!-- artigo 2 -->
+        <div class="composition">
+            <h3>Solfèges, images, inventions: the different paths of sound imaginary</h3>
+            <ul class="composition-meta">
+              <li><strong>Authors:</strong> Yugo Sano Mani, Vinícius Cesar de Oliveira, Silvio Ferraz</li>
+              <li><strong>Type:</strong> Paper</li>
+              <li><strong>Journal:</strong> Música Hodie</li>
+            </ul>
+            <p class="composition-description">
+                This paper aims to reflect on processes and mechanisms that can operate in musical creation, from the conception of a subjective idea to a possible accomplishment. 
+                Therefore, we seek a dialogue between the notion of "solfège" and the four moments of Gilbert Simondon’s "image cycle" (2016): 
+                (1) image-anticipation,(2) lived experience, (3) image-memory, and (4) invention. At the same time, bringing these reflections to the technical dimension of composition, 
+                we propose a dialogue between an “imaginaryinstrument” (Lachenmann, 1996; Padovani, 2017) and a “technical object” (Simondon, 2020), addressing technological tools and several creative supports, 
+                and illustrating some of the ideas through our compositional process. 
+            </p>
+          
+            <!-- Links com ícones -->
+            <div class="research-buttons">
+              <a href="src/pdf/solfejo.pdf" download target="_blank"><i class="fas fa-file-pdf"></i></a>
+              <a href="https://www.researchgate.net/publication/384536962_Solfejos_imagens_invencoes_os_diversos_caminhos_do_imaginario_sonoro" target="_blank"><i class="fab fa-researchgate"></i></a>
+            </div>
+          
+            <!-- PDF Preview dentro da composição -->
+            <div class="pdf-preview">
+              <iframe src="src/pdf/solfejo.pdf#page=2" width="100%" height="600px" style="border: none;"></iframe>
+            </div>
+          </div>
+          
+          <!-- artigo 4 -->
+        <div class="composition">
+            <h3>Compositional strategies aimed at the use of Machine Listenin and Music information Retrieval in the context of live-electronics</h3>
+            <ul class="composition-meta">
+              <li><strong>Authors:</strong> Vinícius Cesar de Oliveira</li>
+              <li><strong>Adivisor:</strong> José Henrique Padovani</li>
+              <li><strong>Type:</strong> Thesis</li>
+              <li><strong>University:</strong> State University of Campinas</li>
+            </ul>
+            <p class="composition-description">
+                The present work consists of a study about compositional strategies in the use of Machine Listening (ML) and Music Information Retrieval (MIR) techniques applied to live-electronic music, proposing a technical, contextual, and creative study. 
+                The research starts from a theoretical foundation that seeks to discuss and contextualize the emergence and development of the ML and MIR as interdisciplinary research fields, as well as approaches concepts related to interactive musical systems, 
+                interactive music and emphlive-electronics. The theoretical foundation also extends to the review of a set of techniques, processes, and tools, aiming to elucidate the main concepts in the implementation of ML/MIR methods. 
+                Subsequently, the investigative study covers some general observations about the main characteristics of musical writing in interactive music/live-electronics associated with the use of the studied tools. 
+                With that, we point out some practical applications and compositional approaches in a set of pieces from the repertoire. 
+                Finally, the last part of the work discusses the creative process of a composition for acoustic guitar and live-electronics, approaching particular strategies for employing ML/MIR techniques. 
+            </p>
+          
+            <!-- Links com ícones -->
+            <div class="research-buttons">
+              <a href="src/pdf/Oliveira_ViniciusCesarDe_M.pdf" download target="_blank"><i class="fas fa-file-pdf"></i></a>
+              <a href="https://www.researchgate.net/publication/360259512_Estrategias_composicionais_voltadas_ao_emprego_de_Machine_Listening_e_Music_Information_Retrieval_no_contexto_da_live-electronics" target="_blank"><i class="fab fa-researchgate"></i></a>
+            </div>
+          
+            <!-- PDF Preview dentro da composição -->
+            <div class="pdf-preview">
+              <iframe src="src/pdf/Oliveira_ViniciusCesarDe_M.pdf#page=1" width="100%" height="600px" style="border: none;"></iframe>
+            </div>
+
+            
+          <!-- video da defesa de mestrado -->
+          <p><strong>Master's Degree Defence:</strong></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mjZfrig4J6c&t=1006s"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen></iframe>
+        </div>
+          </div>
+          <!-- video da defesa de -->
+        
+            <!-- artigo 5 -->
+        <div class="composition">
+            <h3>Towards Decolonial Poetics in Contemporary Music: Contradictions, Notes, and Perspectives </h3>
+            <ul class="composition-meta">
+              <li><strong>Authors:</strong> Vinícius Cesar de Oliveira, Yugo Sano Mani</li>
+              <li><strong>Type:</strong> Paper</li>
+              <li><strong>Journal:</strong> Música Theorica</li>
+            </ul>
+            <p class="composition-description">
+                Amid the repercussions of historical colonization processes, the concepts ofcoloniality and modernity exert a deep influence over collective and individual constructs.Despite transforming these processes into different manifestations, 
+                coloniality persists as alatent force of domination capable of shaping collective thought at multiple layers.Consequently, musical practice as a component of these layers incorporates theirparadigms,
+                 affecting listening, education, and even sound and music imaginary. This textseeks to propose discussions within the context of contemporary music, delving into howthe phenomenon of coloniality underscores compositional practices. 
+                 In parallel, itaddresses the search for decolonial ways while simultaneously problematizing the idea ofclosed and definitive solutions. So that, we elucidate the concepts of colonization,coloniality, decoloniality, and modernity, contextualizing them within the domain ofmusical practices. 
+                 Subsequently, we evaluate possible decolonial ways and thecontradictions that arise when we adopt this posture in music creation through specificexamples from contemporary music scenarios and our musical compositions. 
+            </p>
+          
+            <!-- Links com ícones -->
+            <div class="research-buttons">
+              <a href="src/pdf/271-TextodoArtigo-1319-1-10-20240628.pdf" download target="_blank"><i class="fas fa-file-pdf"></i></a>
+              <a href="https://www.researchgate.net/publication/381855583_Por_poeticas_decoloniais_na_musica_contemporanea_contradicoes_apontamentos_e_perspectivas" target="_blank"><i class="fab fa-researchgate"></i></a>
+            </div>
+          
+            <!-- PDF Preview dentro da composição -->
+            <div class="pdf-preview">
+              <iframe src="src/pdf/271-TextodoArtigo-1319-1-10-20240628.pdf#page=2" width="100%" height="600px" style="border: none;"></iframe>
+            </div>
+          </div>
+
+            <!-- artigo 6 -->
+        <div class="composition">
+            <h3>Berio through Pousseur and Costère: <em>Sequenze VII</em> and <em>Chemins IV</em> analysis proposal</h3>
+            <ul class="composition-meta">
+              <li><strong>Authors:</strong> Vinícius Cesar de Oliveira, Tadeu Taffarello, Denise Garcia</li>
+              <li><strong>Type:</strong> Paper</li>
+              <li><strong>Journal:</strong> Revista Vortex</li>
+            </ul>
+            <p class="composition-description">
+                In this paper, we present an analysis of the compositional processes of Sequenza VII and itsdevelopments in Chemins IV, from the melodic/harmonic point of view. 
+                Theoretical references are: theprinciple of chromatic complementarity of Catherine Losada; the typology created by Henry Pousseur;Albert Lautman's concept of continuous space; 
+                Max Packer's idea of latency and resonance in Berio's work;and Edmound Costère's Law of Universal Attraction. A patch in MAX / MSP environment was createdto assist in obtaining the analytical results. 
+                As final considerations, it is clear that the process of melodicstructuring of the oboe in Sequenza VII is the trigger of a harmonic unfolding process in Chemins IV. 
+            </p>
+          
+            <!-- Links com ícones -->
+            <div class="research-buttons">
+              <a href="src/pdf/oliveira_taffarello_garcia_v7_n3.pdf" download target="_blank"><i class="fas fa-file-pdf"></i></a>
+              <a href="https://www.researchgate.net/publication/337366717_Berio_via_Pousseur_e_Costere_Uma_proposta_de_analise_de_Sequenza_VII_e_Chemins_IV" target="_blank"><i class="fab fa-researchgate"></i></a>
+            </div>
+          
+            <!-- PDF Preview dentro da composição -->
+            <div class="pdf-preview">
+              <iframe src="src/pdf/oliveira_taffarello_garcia_v7_n3.pdf#page=2" width="100%" height="600px" style="border: none;"></iframe>
+            </div>
+          </div>
+
+              <!-- artigo 7 -->
+        <div class="composition">
+            <h3><em>Sanctus, Benedictus and Agnus Dei</em> from <em>Missa da Paz [Mass of Peace]</em> by Almeida Prado: Creation
+              Context and Musical Analysis</h3>
+            <ul class="composition-meta">
+              <li><strong>Authors:</strong> Tadeu Taffarello, Vinícius Cesar de Oliveira</li>
+              <li><strong>Type:</strong> Paper</li>
+              <li><strong>Journal:</strong> Revista de música vocal erudita brasileira </li>
+            </ul>
+            <p class="composition-description">
+                Missa da Paz, from 1965, was composed by Almeida Prado at a time of transition in hiscompositional practice and of liturgical renewal of the Catholic Church. 
+                The objectives of the work are: tocontextualize the creation of this work; and carry out musical analysis of the movements Sanctus,Benedictus and Agnus Dei. 
+                The analysis methodology used was the structural analysis, highlighting themovement structural elements. As a final result, we noticed the mixture of pre-tonal elem 
+            </p>
+          
+            <!-- Links com ícones -->
+            <div class="research-buttons">
+              <a href="src/pdf/05ArtigoTadeuTafarelloREVISADO.pdf" download target="_blank"><i class="fas fa-file-pdf"></i></a>
+              <a href="https://www.researchgate.net/publication/383542735_Sanctus_Benedictus_e_Agnus_Dei_da_Missa_da_Paz_de_Almeida_Prado_contexto_de_criacao_e_analise_musical" target="_blank"><i class="fab fa-researchgate"></i></a>
+            </div>
+          
+            <!-- PDF Preview dentro da composição -->
+            <div class="pdf-preview">
+              <iframe src="src/pdf/05ArtigoTadeuTafarelloREVISADO.pdf#page=2" width="100%" height="600px" style="border: none;"></iframe>
+            </div>
+          </div>
+        
+          <div class="section-title">
+            <h2>Conference</h2>
+            <span class="watermark">Papers</span>
+            </div>
+
+        <!-- conferencia 1 -->
+          <div class="composition">
+            <h3>Solfeggios, images, inventions: the different paths of sound imaginary</h3>
+            <ul class="composition-meta">
+                <li><strong>Authors:</strong> Yugo Sano Mani, Vinícius Cesar de Oliveira</li>
+                <li><strong>Type:</strong> Conference Paper</li>
+                <li><strong>Conference:</strong> Simpósio Internacional de Música Nova 2023 </li>
+            </ul>
+            <p class="composition-description">
+              This text seeks to describe the various moments that occur in the compositional process, from the conception of a certain subjective idea to its concreteness. 
+              We will draw a parallel between the notion of “solfeggio” and the four moments of Gilbert Simondon's “cycle of images”: 1) image-anticipation, 2) lived experience, 3) image-memory, and, finally, 4) invention. 
+              At the same time, in dialogue with the notions of “imaginary instrument” (LACHENMANN, 1996; PADOVANI, 2017) and “technical object” (SIMONDON, 2020), we will investigate the technical dimension of composition, 
+              dealing with creative, technological tools, and different creation supports.
+            </p>
+            
+            <!-- Links com ícones -->
+            <div class="research-buttons">
+                <a href="src/pdf/resumo_simn_2023.pdf" download target="_blank"><i class="fas fa-file-pdf"></i></a>
+                <a href="https://www.researchgate.net/publication/375688604_Solfeggios_images_inventions_the_different_paths_of_sound_imaginary" target="_blank"><i class="fab fa-researchgate"></i></a>
+            </div>
+            
+            <div>
+            <p><strong>Presentation:</strong></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/g_BCnbRouHU?start=1945" 
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+            </div>
+          </div>
+          
+          <!-- conferencia 2 -->
+          <div class="composition">
+            <h3>Mapping, Triggering, Scoring, and Procedural Paradigms of Machine Listening Application in Live-Electronics Compositions</h3>
+            <ul class="composition-meta">
+                <li><strong>Authors:</strong> Vinícius Cesar de Oliveira, José Henrique Padovani</li>
+                <li><strong>Type:</strong> Conference Paper</li>
+                <li><strong>Conference:</strong> 18th Brazilian Symposium on Computer Music </li>
+            </ul>
+            <p class="composition-description">
+              Since the advent of real-time computer music environments, composers have increasingly incorporated DSP analysis, synthesis, and processing algorithms in their creative practices. 
+              Those processes became part of interactive systems that use real-time computational tools in musical compositions that explore diverse techniques to generate, spatialize, and process instrumental/vocal sounds. 
+              Parallel to the development of these tools and the expansion of DSP methods, new techniques focused on sound/musical information extraction became part of the tools available for music composition. 
+              In this context, this article discusses the creative use of Machine Listening and Musical Information Retrieval techniques applied in the composition of live-electronics works. 
+              By pointing out some practical applications and creative approaches, we aim to circumscribe, in a general way, the strategies for employing Machine Listening and Music Information Retrieval techniques 
+              observed in a set of live-electronics pieces, categorizing four compositional approaches: namely, mapping, triggering, scoring, and procedural paradigms of application of machine listening techniques in the context of live-electronics music compositions.
+            </p>
+            
+            <!-- Links com ícones -->
+            <div class="research-buttons">
+                <a href="src/pdf/Vinicius_SBCM_2021_camready.pdf" download target="_blank"><i class="fas fa-file-pdf"></i></a>
+                <a href="https://www.researchgate.net/publication/355521588_Mapping_Triggering_Scoring_and_Procedural_Paradigms_of_Machine_Listening_Application_in_Live-Electronics_Compositions" target="_blank"><i class="fab fa-researchgate"></i></a>
+            </div>
+            
+            <!-- PDF Preview dentro da composição -->
+              <div class="pdf-preview">
+                <iframe src="src/pdf/Vinicius_SBCM_2021_camready.pdf#page=1" width="100%" height="600px" style="border: none;"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- conferencia 1 -->
+          <div class="composition">
+            <h3>Some Compositional Approaches in the Practice of live- electronic music from the perspective of technique and technological tools</h3>
+            <ul class="composition-meta">
+                <li><strong>Authors:</strong> Vinícius Cesar de Oliveira, Thales Roel</li>
+                <li><strong>Type:</strong> Conference Paper</li>
+                <li><strong>Conference:</strong> Simpósio Internacional de Música Nova 2021 </li>
+            </ul>
+            <div>
+            <p><strong>Presentation:</strong></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NkTYTh5lXZI"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- conferencia 2 -->
+          <div class="composition">
+            <h3>Modes of technical expansion of musical instruments employed in Tensio (2010), for stringquartet and live-electronics, by Philippe Manoury.</h3>
+            <ul class="composition-meta">
+                <li><strong>Authors:</strong> Vinícius Cesar de Oliveira, José Henrique Padovani</li>
+                <li><strong>Type:</strong> Conference Paper</li>
+                <li><strong>Conference:</strong> XXIX Congresso da Associação Nacional de Pesquisa e Pós-Graduação em Música </li>
+            </ul>
+            <p class="composition-description">
+              The paper aims to define and map the strategies of technical expansion of musical instruments in the context of interactive mixed music. This is realized from observations about Tensio (2010), 
+              for string quartet and real-time electronic processes, by Philippe Manoury. The text starts from the notion of expanded instrument dialoguing with propositions of authors/composers such as Helmut Lachenmann, 
+              Johnathan Harvey and Manoury, and identifies three modes of technical expansion of the musical instruments in the piece.
+            </p>
+            
+            <!-- Links com ícones -->
+            <div class="research-buttons">
+                <a href="src/pdf/Modalidades_expansao_tecnica.pdf" download target="_blank"><i class="fas fa-file-pdf"></i></a>
+                <a href="https://www.researchgate.net/publication/335612003_Modalidades_de_expansao_tecnica_instrumental_empregadas_em_Tensio_2010_para_quarteto_de_cordas_e_live-electronics_de_Philippe_Manoury" target="_blank"><i class="fab fa-researchgate"></i></a>
+            </div>
+            
+            <!-- PDF Preview dentro da composição -->
+              <div class="pdf-preview">
+                <iframe src="src/pdf/Modalidades_expansao_tecnica.pdf#page=2" width="100%" height="600px" style="border: none;"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- conferencia 2 -->
+          <div class="composition">
+            <h3>Engendering of musical structures through the interactionbetween instrumental writing and interactive processes in Tensio(2010), for Philippe Manoury’s string quartet and live-electronics</h3>
+            <ul class="composition-meta">
+                <li><strong>Authors:</strong> Vinícius Cesar de Oliveira, José Henrique Padovani</li>
+                <li><strong>Type:</strong> Conference Paper</li>
+                <li><strong>Conference:</strong> EITAM 5 – V Encontro Internacional de Teoria e Análise Musical </li>
+            </ul>
+            <p class="composition-description">
+              As part of a research focused on technical and creative investigation about the use of interactive musical systems in mixed music, the present work aims an analytical approach of the compositional strategies employed in emph Tensio (2010), 
+              for string quartet and emph live-electronics by Philippe Manoury. We seek to understand how the composer establishes interactive mechanisms and agencies in order to engender and intertwine formal, gestural, 
+              textural and harmonic / melodic structures between interactive processes and instrumental writing.
+            </p>
+            
+            <!-- Links com ícones -->
+            <div class="research-buttons">
+                <a href="src/pdf/EITAM5-paper_18_OliveiraV_PadovaniJ-pp_251-262.pdf" download target="_blank"><i class="fas fa-file-pdf"></i></a>
+                <a href="https://www.researchgate.net/publication/347986645_Engendramento_de_estruturas_musicais_a_partir_da_interacao_entre_escrita_instrumental_e_processos_interativos_em_Tensio_2010_para_quarteto_de_cordas_e_live-electronics_de_Philippe_Manoury" target="_blank"><i class="fab fa-researchgate"></i></a>
+            </div>
+            
+            <!-- PDF Preview dentro da composição -->
+              <div class="pdf-preview">
+                <iframe src="src/pdf/EITAM5-paper_18_OliveiraV_PadovaniJ-pp_251-262.pdf#page=2" width="100%" height="600px" style="border: none;"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- conferencia 2 -->
+          <div class="composition">
+            <h3>Ignacio de Campos Collection from CDMC/CIDDIC/Unicamp: materials preparation processes and preliminary actions</h3>
+            <ul class="composition-meta">
+                <li><strong>Authors:</strong> Tadeu Taffarello, Vinícius Cesar de Oliveira, Leylson Castro</li>
+                <li><strong>Type:</strong> Conference Paper</li>
+                <li><strong>Conference:</strong> Simpósio CDMC: Documentação, Criação e Performance </li>
+            </ul>
+            <p class="composition-description">
+              Ignacio de Campos’ Collection from CDMC/Unicamp had its technical worksstarted in 2017. In order to demonstrate the material preparation processes andpreliminary actions taken, 
+              this article will be concerned with administrative andmaintenance procedures developed. The main theoretical base is FIGUEIREDO, 2014.Actions developed on this collection 
+              allowed to evaluate importance of these materials for CDMC, to conduct research in music editing and to open new work perspectives 
+            </p>
+            
+            <!-- Links com ícones -->
+            <div class="research-buttons">
+                <a href="src/pdf/2019-Taffarello_Carvalho_Oliveira-AnaisdoSimposioCDMC30anos-FundoIgnaciodeCamposdoCDMC-CIDDIC-Unicamp_processosdepreparacaodosmateriaiseacoespreliminares-conformepublicado.pdf" download target="_blank"><i class="fas fa-file-pdf"></i></a>
+                <a href="https://www.researchgate.net/publication/337566929_Fundo_Ignacio_de_Campos_do_CDMCCIDDICUnicamp_processos_de_preparacao_dos_materiais_e_acoes_preliminares" target="_blank"><i class="fab fa-researchgate"></i></a>
+            </div>
+            
+            <!-- PDF Preview dentro da composição -->
+              <div class="pdf-preview">
+                <iframe src="src/pdf/2019-Taffarello_Carvalho_Oliveira-AnaisdoSimposioCDMC30anos-FundoIgnaciodeCamposdoCDMC-CIDDIC-Unicamp_processosdepreparacaodosmateriaiseacoespreliminares-conformepublicado.pdf#page=1" width="100%" height="600px" style="border: none;"></iframe>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- Seção Algorithms -->
+      <section id="algorithms" class="content-section hidden">
+        <div class="section-title">
+          <h2>Algorithms</h2>
+          <span class="watermark">Main Projects</span>
+        </div>
+
+        <!-- algoritmo 1 -->
+        <div class="composition">
+          <h3><em>SOM</em> (Kohonen's Self-organized Maps)</h3>
+          <!-- <ul class="composition-meta">
+            <li><strong>Authors:</strong> Vinícius Cesar de Oliveira, José Henrique Padovani</li>
+            <li><strong>Type:</strong> Paper</li>
+            <li><strong>Journal:</strong> Revista Vortex</li>
+          </ul> -->
+          <p class="composition-description">
+            <em>som</em> is a Pure Data external implementation of <em>Kohonen's Self-organized Maps (SOM)</em>, a competitive unsupervised neural network proposed by <em>Teuvo Kohonen</em> in the paper 
+            <a href="https://link.springer.com/article/10.1007/BF00337288" target="_blank">Self-organized formation of topologically correct feature maps</a>. 
+            <br><br>
+            Formally, the SOM algorithm maps high-dimensional input data to elements arranged in a low-dimensional matrix, reducing the dimensionality of complex topological spaces.
+            The object receives a list of features of up to three dimensions and maps the topology of the input data. Once the network is trained, it receives a list of features and outputs the nearest neuron's weights for each input.
+            <br><br>
+            <em>som</em> is part of a broader research aiming at the creative appropriation of <em>machine learning</em> algorithms in the context of live electronic music. 
+            It includes some features not present in typical SOM implementations, such as a negative learning rate (allowing the object to "unlearn" data topology) and a probability factor (to control probabilistic selection of neurons).
+          </p>
+
+          <!-- Links com ícones -->
+          <div class="research-buttons">
+            <a href="https://github.com/oviniciuscesar/pd-som/releases/tag/v0.2b" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+          <div>
+            <p><strong>Demostration:</strong></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rbAg_XYbR9c"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+            </div>
+            <p class="composition-description">
+              Demonstration of the application of the <em>som</em> object in Pure Data to combine sound events detected in real time with sound events previously detected in audio samples.
+            </p>
+
+
+        </div>
+
+        <!-- algoritmo 1 -->
+        <div class="composition">
+          <h3>Perceptron<h3>
+          <p class="composition-description">
+            The <em>perceptron</em> is an artificial neuron model, created by Frank Rosenblatt in 1958, capable of automatically "learning" which are the ideal values of weights w that, 
+            when weighting the inputs x, transmit the signal (returning the value 1) or not (returning the value 0) depending on the nature of the input data (input signal). 
+            In the context of machine learning, such an algorithm is used to solve binary classification and linear regression.
+            This implementation is the result of a study of the creative appropriation of machine learning algorithms in the context of live-electornics music composition. 
+            Therefore, it presents some functions that are not in the original algorithm created by Rosenblat.
+          </p>
+
+          <!-- Links com ícones -->
+          <div class="research-buttons">
+            <a href="https://github.com/oviniciuscesar/pd-perceptron/releases" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+
+          <div>
+            <p><strong>Demostration:</strong></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/43gcwhRgmzQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+            </div>
+            <p class="composition-description">
+            A simple demonstrtion of berimbau and agogo sound classification using the <em>perceptron</em> object in Pure Data. 
+            </p>
+        </div>
+
+        <!-- algoritmo 1 -->
+        <div class="composition">
+          <h3><em>2 Dimensional Convolutional Autoencoder</em></h3>
+          <!-- <p class="composition-description">
+            <em>som</em> is a Pure Data external implementation of <em>Kohonen's Self-organized Maps (SOM)</em>, a competitive unsupervised neural network proposed by <em>Teuvo Kohonen</em> in the paper 
+            <a href="https://link.springer.com/article/10.1007/BF00337288" target="_blank">Self-organized formation of topologically correct feature maps</a>. 
+            <br><br>
+            Formally, the SOM algorithm maps high-dimensional input data to elements arranged in a low-dimensional matrix, reducing the dimensionality of complex topological spaces.
+            The object receives a list of features of up to three dimensions and maps the topology of the input data. Once the network is trained, it receives a list of features and outputs the nearest neuron's weights for each input.
+            <br><br>
+            <em>som</em> is part of a broader research aiming at the creative appropriation of <em>machine learning</em> algorithms in the context of live electronic music. 
+            It includes some features not present in typical SOM implementations, such as a negative learning rate (allowing the object to "unlearn" data topology) and a probability factor (to control probabilistic selection of neurons).
+          </p> -->
+
+          <div class="readme-preview" data-repo="oviniciuscesar/cnn2d"></div>
+
+          <!-- Links com ícones -->
+          <div class="research-buttons">
+            <a href="https://github.com/oviniciuscesar/cnn2d" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+      </div>  
+      
+
+        <!-- algoritmo 1 -->
+      <div class="composition">
+          <h3><em>Multilayer Perceptron</em></h3>
+          <!-- <p class="composition-description">
+            <em>som</em> is a Pure Data external implementation of <em>Kohonen's Self-organized Maps (SOM)</em>, a competitive unsupervised neural network proposed by <em>Teuvo Kohonen</em> in the paper 
+            <a href="https://link.springer.com/article/10.1007/BF00337288" target="_blank">Self-organized formation of topologically correct feature maps</a>. 
+            <br><br>
+            Formally, the SOM algorithm maps high-dimensional input data to elements arranged in a low-dimensional matrix, reducing the dimensionality of complex topological spaces.
+            The object receives a list of features of up to three dimensions and maps the topology of the input data. Once the network is trained, it receives a list of features and outputs the nearest neuron's weights for each input.
+            <br><br>
+            <em>som</em> is part of a broader research aiming at the creative appropriation of <em>machine learning</em> algorithms in the context of live electronic music. 
+            It includes some features not present in typical SOM implementations, such as a negative learning rate (allowing the object to "unlearn" data topology) and a probability factor (to control probabilistic selection of neurons).
+          </p> -->
+
+          <div class="readme-preview" data-repo="oviniciuscesar/mlperceptron"></div>
+
+          <!-- Links com ícones -->
+          <div class="research-buttons">
+            <a href="https://github.com/oviniciuscesar/mlperceptron" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+      </div>  
+    </div>
+
+        <!-- algoritmo 1 -->
+        <div class="composition">
+          <h3><em>Search A-Star</em></h3>
+          <!-- <p class="composition-description">
+            <em>som</em> is a Pure Data external implementation of <em>Kohonen's Self-organized Maps (SOM)</em>, a competitive unsupervised neural network proposed by <em>Teuvo Kohonen</em> in the paper 
+            <a href="https://link.springer.com/article/10.1007/BF00337288" target="_blank">Self-organized formation of topologically correct feature maps</a>. 
+            <br><br>
+            Formally, the SOM algorithm maps high-dimensional input data to elements arranged in a low-dimensional matrix, reducing the dimensionality of complex topological spaces.
+            The object receives a list of features of up to three dimensions and maps the topology of the input data. Once the network is trained, it receives a list of features and outputs the nearest neuron's weights for each input.
+            <br><br>
+            <em>som</em> is part of a broader research aiming at the creative appropriation of <em>machine learning</em> algorithms in the context of live electronic music. 
+            It includes some features not present in typical SOM implementations, such as a negative learning rate (allowing the object to "unlearn" data topology) and a probability factor (to control probabilistic selection of neurons).
+          </p> -->
+
+          <div class="readme-preview" data-repo="oviniciuscesar/searchA-Star"></div>
+
+          <!-- Links com ícones -->
+          <div class="research-buttons">
+            <a href="https://github.com/oviniciuscesar/searchA-Star" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+       
+          <div>
+            <p><strong>Demostration:</strong></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sdMeYdlYjoY"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+            </div>
+            <p class="composition-description">
+              Real-time control of synthesis parameters using <em>searchA</em>, driven by heuristic search over a feature-based graph.
+            </p>
+        </div>
+    </div>
+   </section>
+
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- <script src="src/conf/sketch.js"></script> -->
+
+    <script>
+      const el = document.getElementById('verticalText');
+      const text = el.textContent;
+      el.innerHTML = text.split('').join('<br>');
+    </script>
+    
+<!-- animação do texto inicial -->
+    <script>
+      const texts = [
+        "He holds a Bachelor’s in Music Composition (2018) and a Master’s in Creative Processes (2022) from the University of Campinas (Unicamp), where he is currently a Ph.D. candidate in Music under the supervision of Prof. Dr. José Henrique Padovani. His research explores the implementation, creative exploration, and development of compositional strategies using new technologies, such as Music Information Retrieval (MIR), Machine Listening, and Machine learning algorithms applied to live electronics music.",
+        "<strong>Research lines</strong><br> <b> <em>Music composition:</em></b><br>Artistic and analytical research in contemporary composition, focusing on instrumental and live-electronics works. Combines academic study of 20th and 21st-century repertoire with creative practice",
+        "<strong>Research lines</strong><br> <b> <em>Musical Analysis:</em></b><br>Computational modeling of compositional techniques; analysis of instrumental and electroacoustic works across historical periods.",
+        "<strong>Research lines</strong><br> <b> <em>Algorithmic Composition:</em></b><br>Exploration of computational methods and new technologies applied to instrumental and live electronic music composition.",
+        "<strong>Research Projects</strong> <br> <b><em>Creative appropriation of machine listening and machine learning algorithms aimed at the compositional practice of live electronics</em></b><br> Develop and adapt machine listening and machine learning algorithms and explore their compositionally. Approach: Theoretical/conceptual study of machine listening and machine learning in music. Implementation of algorithms and compositional process. Creative application in compositional projects.",
+        "<strong>Research Projects</strong> <br> <b><em>Technical Objects and Creation in live electronic music</em></b><br>Examines the interplay between poetic imagery, technical tools, and musical realization in mixed/interactive music, drawing on Gilbert Simondon’s philosophy.",
+        "<strong>Research Projects</strong> <br> <b><em>Machine Listening in Live-Electronics</em></b><br>Investigation of compositional strategies using ML/MIR in live electronics, analysis of pieces from the live electronics and interactive music repertoire, and development of compositionla projects.",
+        "<strong>Research Projects</strong> <br> <b><em>Berio’s Instrumental Writing</em></b><br>Analyzed the compositional unfolding from Sequenza VII to Chemins IV (Luciano Berio).",
+        "<strong>Research Projects</strong> <br> <b><em>Polyphonic Simulation in Berio and Bach</em></b><br>Description: Comparative study of latent polyphony in Bach’s violin works and Berio’s Sequenze.",
+      ];
+    
+      let index = 0;
+      const textElement = document.getElementById("bio-text");
+    
+      setInterval(() => {
+        index = (index + 1) % texts.length;
+        textElement.classList.add("fade-out");
+    
+        setTimeout(() => {
+          // textElement.textContent = texts[index];
+          textElement.innerHTML = texts[index]; // em vez de textContent
+          textElement.classList.remove("fade-out");
+        }, 500); // tempo da animação de fade
+      }, 10000); // 30 segundos
+    </script>
+
+
+<script>
+  document.querySelectorAll('.readme-preview').forEach((element) => {
+    const repo = element.getAttribute('data-repo');
+
+    fetch(`https://api.github.com/repos/${repo}/readme`, {
+      headers: {
+        Accept: "application/vnd.github.v3.raw",
+      },
+    })
+      .then((response) => response.text())
+      .then((markdown) => {
+        // Remove a seção "## Build"
+        const filteredMarkdown = markdown.replace(/## Build[\s\S]*?(?=^## |\Z)/gm, "");
+
+        // Converte markdown em HTML
+        const html = marked.parse(filteredMarkdown);
+
+        // Insere o HTML no elemento
+        element.innerHTML = html;
+
+        // Adiciona dinamicamente a classe de estilo
+        element.classList.add("composition-description");
+      })
+      .catch((error) => {
+        console.error(`Erro ao carregar README do repositório ${repo}:`, error);
+      });
+  });
+</script>
+
+    <script>
+        // Menu responsivo
+        let bar = document.querySelector('.bars .fa-bars');
+        let menu = document.querySelector('.menu');
+        bar.addEventListener('click', function () {
+            menu.classList.toggle('show_menu');
+        });
+    
+        // Inicialização do AOS
+        AOS.init();
+    
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.add('hidden'));
+
+            const target = document.getElementById(sectionId);
+            if (target) {
+                target.classList.remove('hidden');
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            // Atualiza o texto do label lateral
+            const sectionLabel = document.getElementById('section-label');
+            sectionLabel.textContent = sectionId.toUpperCase();
+        }
+        
+
+    
+        // Ativação dos links do menu
+          // document.querySelectorAll('.menu a').forEach(link => {
+          //   link.addEventListener('click', function (e) {
+          //     e.preventDefault();
+          //     const text = this.textContent.trim();
+          //     console.log('Link clicado:', text);
+
+          //     if (text === 'Home') {
+          //       showSection('home'); // nome da seção principal
+          //     } else if (text === 'Compositions') {
+          //       showSection('compositions');
+          //     } else if (text === 'Researches') {
+          //       showSection('researches');
+          //     } else if (text === 'Algorithms') {
+          //       showSection('algorithms');
+          //     } else {
+          //       showSection('content'); // fallback
+          //     }
+          //   });
+          // });
+
+          document.querySelectorAll('.menu a').forEach(link => {
+                link.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  const text = this.textContent.trim();
+                  console.log('Link clicado:', text);
+
+                  if (text === 'Home') {
+                    // Rola suavemente para o topo da página
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                    // Oculta outras seções, se necessário
+                    document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+
+                    // Atualiza o texto lateral, se estiver usando
+                    const sectionLabel = document.getElementById('section-label');
+                    if (sectionLabel) sectionLabel.textContent = 'HOME';
+
+                  } else if (text === 'Compositions') {
+                    showSection('compositions');
+                  } else if (text === 'Researches') {
+                    showSection('researches');
+                  } else if (text === 'Algorithms') {
+                    showSection('algorithms');
+                  } else {
+                    showSection('content'); // fallback
+                  }
+                });
+              });
+
+
+
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
