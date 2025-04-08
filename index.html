@@ -869,18 +869,48 @@
 
 
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <!-- <script src="src/conf/sketch.js"></script> -->
-
-    <script>
-      const el = document.getElementById('verticalText');
-      const text = el.textContent;
-      el.innerHTML = text.split('').join('<br>');
-    </script>
-    
-<!-- animação do texto inicial -->
-    <script>
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuItems = document.querySelectorAll('.menu a');
+      const bar = document.querySelector('.bars .fa-bars');
+      const menu = document.querySelector('.menu');
+      const sectionLabel = document.getElementById('section-label');
+  
+      // Menu responsivo (abre/fecha com ícone)
+      bar.addEventListener('click', () => {
+        menu.classList.toggle('show_menu');
+      });
+  
+      // Ativação dos links do menu
+      menuItems.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const text = link.textContent.trim().toLowerCase();
+  
+          // Fecha o menu mobile
+          menu.classList.remove('show_menu');
+  
+          // Oculta todas as seções
+          document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+          });
+  
+          // Ação para cada item
+          if (text === 'home') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            if (sectionLabel) sectionLabel.textContent = 'HOME';
+          } else {
+            const target = document.getElementById(text);
+            if (target) {
+              target.classList.remove('hidden');
+              target.scrollIntoView({ behavior: 'smooth' });
+              if (sectionLabel) sectionLabel.textContent = text.toUpperCase();
+            }
+          }
+        });
+      });
+  
+      // Animação do texto inicial (bio)
       const texts = [
         "He holds a Bachelor’s in Music Composition (2018) and a Master’s in Creative Processes (2022) from the University of Campinas (Unicamp), where he is currently a Ph.D. candidate in Music under the supervision of Prof. Dr. José Henrique Padovani. His research explores the implementation, creative exploration, and development of compositional strategies using new technologies, such as Music Information Retrieval (MIR), Machine Listening, and Machine learning algorithms applied to live electronics music.",
         "<strong>Research lines</strong><br> <b> <em>Music composition:</em></b><br>Artistic and analytical research in contemporary composition, focusing on instrumental and live-electronics works. Combines academic study of 20th and 21st-century repertoire with creative practice",
@@ -892,135 +922,53 @@
         "<strong>Research Projects</strong> <br> <b><em>Berio’s Instrumental Writing</em></b><br>Analyzed the compositional unfolding from Sequenza VII to Chemins IV (Luciano Berio).",
         "<strong>Research Projects</strong> <br> <b><em>Polyphonic Simulation in Berio and Bach</em></b><br>Description: Comparative study of latent polyphony in Bach’s violin works and Berio’s Sequenze.",
       ];
-    
+  
       let index = 0;
       const textElement = document.getElementById("bio-text");
-    
+  
       setInterval(() => {
         index = (index + 1) % texts.length;
         textElement.classList.add("fade-out");
-    
         setTimeout(() => {
-          // textElement.textContent = texts[index];
-          textElement.innerHTML = texts[index]; // em vez de textContent
+          textElement.innerHTML = texts[index];
           textElement.classList.remove("fade-out");
-        }, 500); // tempo da animação de fade
-      }, 10000); // 30 segundos
-    </script>
-
-
-<script>
-  document.querySelectorAll('.readme-preview').forEach((element) => {
-    const repo = element.getAttribute('data-repo');
-
-    fetch(`https://api.github.com/repos/${repo}/readme`, {
-      headers: {
-        Accept: "application/vnd.github.v3.raw",
-      },
-    })
-      .then((response) => response.text())
-      .then((markdown) => {
-        // Remove a seção "## Build"
-        const filteredMarkdown = markdown.replace(/## Build[\s\S]*?(?=^## |\Z)/gm, "");
-
-        // Converte markdown em HTML
-        const html = marked.parse(filteredMarkdown);
-
-        // Insere o HTML no elemento
-        element.innerHTML = html;
-
-        // Adiciona dinamicamente a classe de estilo
-        element.classList.add("composition-description");
-      })
-      .catch((error) => {
-        console.error(`Erro ao carregar README do repositório ${repo}:`, error);
+        }, 500);
+      }, 10000); // alterna a cada 10 segundos
+  
+      // Carregamento de READMEs do GitHub
+      document.querySelectorAll('.readme-preview').forEach((element) => {
+        const repo = element.getAttribute('data-repo');
+  
+        fetch(`https://api.github.com/repos/${repo}/readme`, {
+          headers: {
+            Accept: "application/vnd.github.v3.raw",
+          },
+        })
+          .then((response) => response.text())
+          .then((markdown) => {
+            // Remove seção "Build"
+            const filteredMarkdown = markdown.replace(/## Build[\s\S]*?(?=^## |\Z)/gm, "");
+            const html = marked.parse(filteredMarkdown);
+            element.innerHTML = html;
+            element.classList.add("composition-description");
+          })
+          .catch((error) => {
+            console.error(`Erro ao carregar README de ${repo}:`, error);
+          });
       });
-  });
-</script>
-
-    <script>
-        // Menu responsivo
-        let bar = document.querySelector('.bars .fa-bars');
-        let menu = document.querySelector('.menu');
-        bar.addEventListener('click', function () {
-            menu.classList.toggle('show_menu');
-        });
-    
-        // Inicialização do AOS
-        AOS.init();
-    
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => section.classList.add('hidden'));
-
-            const target = document.getElementById(sectionId);
-            if (target) {
-                target.classList.remove('hidden');
-                target.scrollIntoView({ behavior: 'smooth' });
-            }
-
-            // Atualiza o texto do label lateral
-            const sectionLabel = document.getElementById('section-label');
-            sectionLabel.textContent = sectionId.toUpperCase();
-        }
-        
-
-    
-        // Ativação dos links do menu
-          // document.querySelectorAll('.menu a').forEach(link => {
-          //   link.addEventListener('click', function (e) {
-          //     e.preventDefault();
-          //     const text = this.textContent.trim();
-          //     console.log('Link clicado:', text);
-
-          //     if (text === 'Home') {
-          //       showSection('home'); // nome da seção principal
-          //     } else if (text === 'Compositions') {
-          //       showSection('compositions');
-          //     } else if (text === 'Researches') {
-          //       showSection('researches');
-          //     } else if (text === 'Algorithms') {
-          //       showSection('algorithms');
-          //     } else {
-          //       showSection('content'); // fallback
-          //     }
-          //   });
-          // });
-
-          document.querySelectorAll('.menu a').forEach(link => {
-                link.addEventListener('click', function (e) {
-                  e.preventDefault();
-                  const text = this.textContent.trim();
-                  console.log('Link clicado:', text);
-
-                  if (text === 'Home') {
-                    // Rola suavemente para o topo da página
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-
-                    // Oculta outras seções, se necessário
-                    document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
-
-                    // Atualiza o texto lateral, se estiver usando
-                    const sectionLabel = document.getElementById('section-label');
-                    if (sectionLabel) sectionLabel.textContent = 'HOME';
-
-                  } else if (text === 'Compositions') {
-                    showSection('compositions');
-                  } else if (text === 'Researches') {
-                    showSection('researches');
-                  } else if (text === 'Algorithms') {
-                    showSection('algorithms');
-                  } else {
-                    showSection('content'); // fallback
-                  }
-                });
-              });
-
-
-
-    </script>
-    
-    <script src="script.js"></script>
+  
+      // Texto vertical com quebra de linha
+      const verticalText = document.getElementById('verticalText');
+      if (verticalText) {
+        const text = verticalText.textContent;
+        verticalText.innerHTML = text.split('').join('<br>');
+      }
+  
+      // Inicialização de animações AOS
+      AOS.init();
+    });
+  </script>
+  
 </body>
 </html>
 
