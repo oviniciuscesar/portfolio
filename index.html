@@ -799,7 +799,9 @@
             It includes some features not present in typical SOM implementations, such as a negative learning rate (allowing the object to "unlearn" data topology) and a probability factor (to control probabilistic selection of neurons).
           </p> -->
 
-          <div class="readme-preview" data-repo="oviniciuscesar/cnn2d"></div>
+          <!-- <div class="readme-preview" data-repo="oviniciuscesar/cnn2d"></div> -->
+          <div class="readme-preview" data-html="src/html/cnn2d.html"></div>
+
 
           <!-- Links com ícones -->
           <div class="research-buttons">
@@ -822,7 +824,8 @@
             It includes some features not present in typical SOM implementations, such as a negative learning rate (allowing the object to "unlearn" data topology) and a probability factor (to control probabilistic selection of neurons).
           </p> -->
 
-          <div class="readme-preview" data-repo="oviniciuscesar/mlperceptron"></div>
+          <!-- <div class="readme-preview" data-repo="oviniciuscesar/mlperceptron"></div> -->
+          <div class="readme-preview" data-html="src/html/mlperceptron.html"></div>
 
           <!-- Links com ícones -->
           <div class="research-buttons">
@@ -845,7 +848,8 @@
             It includes some features not present in typical SOM implementations, such as a negative learning rate (allowing the object to "unlearn" data topology) and a probability factor (to control probabilistic selection of neurons).
           </p> -->
 
-          <div class="readme-preview" data-repo="oviniciuscesar/searchA-Star"></div>
+          <!-- <div class="readme-preview" data-repo="oviniciuscesar/searchA-Star"></div> -->
+          <div class="readme-preview" data-html="src/html/searchA.html"></div>
 
           <!-- Links com ícones -->
           <div class="research-buttons">
@@ -935,27 +939,45 @@
         }, 500);
       }, 10000); // alterna a cada 10 segundos
   
-      // Carregamento de READMEs do GitHub
+
+
+      
       document.querySelectorAll('.readme-preview').forEach((element) => {
-        const repo = element.getAttribute('data-repo');
-  
-        fetch(`https://api.github.com/repos/${repo}/readme`, {
-          headers: {
-            Accept: "application/vnd.github.v3.raw",
-          },
-        })
+        const htmlPath = element.getAttribute('data-html');
+
+        fetch(htmlPath)
           .then((response) => response.text())
-          .then((markdown) => {
-            // Remove seção "Build"
-            const filteredMarkdown = markdown.replace(/## Build[\s\S]*?(?=^## |\Z)/gm, "");
-            const html = marked.parse(filteredMarkdown);
+          .then((html) => {
             element.innerHTML = html;
             element.classList.add("composition-description");
           })
           .catch((error) => {
-            console.error(`Erro ao carregar README de ${repo}:`, error);
+            console.error(`Erro ao carregar HTML:`, error);
           });
       });
+
+
+      // Carregamento de READMEs do GitHub
+      // document.querySelectorAll('.readme-preview').forEach((element) => {
+      //   const repo = element.getAttribute('data-repo');
+  
+      //   fetch(`https://api.github.com/repos/${repo}/readme`, {
+      //     headers: {
+      //       Accept: "application/vnd.github.v3.raw",
+      //     },
+      //   })
+      //     .then((response) => response.text())
+      //     .then((markdown) => {
+      //       // Remove seção "Build"
+      //       const filteredMarkdown = markdown.replace(/## Build[\s\S]*?(?=^## |\Z)/gm, "");
+      //       const html = marked.parse(filteredMarkdown);
+      //       element.innerHTML = html;
+      //       element.classList.add("composition-description");
+      //     })
+      //     .catch((error) => {
+      //       console.error(`Erro ao carregar README de ${repo}:`, error);
+      //     });
+      // });
   
       // Texto vertical com quebra de linha
       const verticalText = document.getElementById('verticalText');

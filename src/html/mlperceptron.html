@@ -1,0 +1,39 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h1 id="mlperceptron">Mlperceptron</h1>
+<p>Work-in-progress vanilla implementation of a <code>fully connected layers neural network</code> (<code>multilayer perceptron</code>) written in C and developed as an external object for the <code>Pure Data</code>.</p>
+<p>The project aims to integrate machine learning algorithms into the <code>Pure Data</code> environment and to provide a configurable neural network architecture (with no external machine learning dependencies) designed for technical studies and real-time composition applications.</p>
+<h1 id="key-features">Key Features</h1>
+<p>✅ Fully configurable network architecture</p>
+<p>Define the number of layers, input dimension, and neurons per layer.</p>
+<p>🧩 Dynamically allocated matrices and vectors</p>
+<p><code>Weight matrices</code></p>
+<p><code>Bias vectors</code></p>
+<p><code>Activation vectors</code></p>
+<p><code>Z vectors</code></p>
+<p><code>Delta vectors</code></p>
+<p>📥 Training parameters</p>
+<p>Accepts <code>input data</code> and <code>labels</code> as lists</p>
+<p>Accepts float for <code>learning rate</code></p>
+<p>Accepts an integer for the <code>number of epochs</code></p>
+<p><code>Training mode</code> toggle (0 = OFF, 1 = ON)</p>
+<p>💾 Model I/O</p>
+<p>Saves trained model to a <code>.txt file</code></p>
+<p>Loads trained model from <code>.txt file</code></p>
+<p>⚙️ <code>Weight</code> &amp; <code>bias</code> initialization methods</p>
+<p><code>Random</code></p>
+<p><code>Zeros</code></p>
+<p><code>Uniform</code></p>
+<p><code>He</code></p>
+<p><code>Xavier</code></p>
+<p><code>Lecun</code></p>
+<p><code>Custom range</code></p>
+<p>🧠 Activation functions supported per layer</p>
+<p><code>sigmoid</code></p>
+<p><code>relu</code></p>
+<p><code>tanh</code></p>
+<p><code>prelu</code></p>
+<p><code>softmax</code></p>
+<p><code>softplus</code></p>
+</body></html>

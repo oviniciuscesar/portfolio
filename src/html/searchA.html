@@ -1,0 +1,43 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h1 id="-searcha"># SearchA</h1>
+<p>A work-in-progress vanilla implementation of the <code>A*</code> search algorithm in C, designed as a <code>Pure Data</code> external object.
+The <code>searchA</code> object implements a <code>heuristic search algorithm</code> based on the <code>A*</code> algorithm. It enables users to load graph structures from <code>.txt</code> files, configure custom <code>heuristics</code> and <code>weights</code>, and perform optimized searches according to different modes and criteria.</p>
+<p>This project aims to bring artificial intelligence and heuristic search functionalities into the <code>Pure Data</code> environment. It provides fully configurable functionalities - with no external machine learning dependencies — designed for both technical research and real-time composition applications.</p>
+<h1 id="graph-structures-overview">Graph Structures Overview</h1>
+<p>The graph that can be loaded by the <code>searchA</code> follows the following structure:</p>
+<p><code>Edge:</code>
+Represents a connection between two <code>nodes</code> in the graph. Each <code>edge</code> stores a set of heuristic values (e.g., <code>brightness</code>, <code>roughness</code>, <code>harmonicity</code>, or any other sound/musical attributes and data) and a reference to the destination node it connects to. These values are used to calculate the cost or priority of moving from one node to another during the search.</p>
+<p><code>Node:</code>
+Represents a point in the graph, typically corresponding to a musical or sound-related event. Each <code>node</code> contains its own set of heuristic values, a unique index or identifier, and a list of outgoing edges connecting it to other <code>nodes</code>. <code>Nodes</code> serve as the core units visited and evaluated during the search process.</p>
+<p>The object manages the graph structure, including all nodes and their connections, keeps track of the <code>search state</code>, stores <code>heuristic weights</code> (to prioritize certain attributes), and controls the <code>input/output</code> behavior via outlets. It’s responsible for executing the <code>A*</code> search algorithm and returning the best path according to the configured <code>mode</code> and <code>weights</code>.</p>
+<h3 id="-graph-structure-example-simplified-diagram-">📈 Graph Structure example (Simplified Diagram)</h3>
+<p>Each line in the <code>.txt</code> file represents a node in the graph. The format is:</p>
+<p><code>&lt;node_heuristics&gt; -&gt; &lt;connected_node_1_heuristics&gt; &lt;connected_node_2_heuristics&gt; ...</code></p>
+<p>Heuristic values are space-separated, and <code>-&gt;</code> indicates the direction to connected nodes.</p>
+<h3 id="-sample-txt-entry">🔢 Sample .txt Entry</h3>
+<p><code>0.00123164 0.16744 0.560182 -&gt; 0.0149622 0.44435 0.5078 -&gt; 0.065612 0.428811 0.677328</code></p>
+<h3 id="-visual-representation">🖼️ Visual Representation</h3>
+<p><code>node</code> A is connected to <code>node</code> B and C:</p>
+<pre><code><span class="hljs-keyword">Node</span> A:<span class="hljs-title"> (0</span>.<span class="hljs-number">00123164</span> <span class="hljs-number">0.16744</span> <span class="hljs-number">0.560182</span>)
+   |
+   |--&gt; <span class="hljs-keyword">Node</span> B:<span class="hljs-title"> (0</span>.<span class="hljs-number">0149622</span> <span class="hljs-number">0.44435</span> <span class="hljs-number">0.5078</span>)
+   |
+   |--&gt; <span class="hljs-keyword">Node</span> C:<span class="hljs-title"> (0</span>.<span class="hljs-number">065612</span> <span class="hljs-number">0.428811</span> <span class="hljs-number">0.677328</span>)
+</code></pre><p>This shows how a single node can lead to multiple destinations, forming a directed <code>graph</code> structure that the <code>A*</code> algorithm will traverse.
+The search process will evaluate different paths in this graph, based on the weights and the configured search mode (e.g., <code>lowest cost</code> or <code>highest cost</code>), to find the optimal route from the current node to a target.</p>
+<h3 id="-functionalities">🔧 Functionalities</h3>
+<ul>
+<li><p><strong><code>read &lt;filename&gt;</code></strong><br>Loads a graph from a <code>.txt</code> file. Each line defines a <code>node</code>, its heuristic values, and its outgoing connections. This initializes the internal <code>graph</code> structure.</p>
+</li>
+<li><p><strong>List input</strong><br>Triggers the <code>A*</code> search algorithm using the current <code>graph</code>, <code>weighting</code>, and <code>search mode</code>. The resulting path is output through the object&#39;s outlets. This is done by sending a list of features (<code>heuristics</code>) to the object.</p>
+</li>
+<li><p><strong><code>restart</code></strong><br>Resets the internal <code>search state</code>. Clears all previously visited <code>nodes</code> and accumulated costs, allowing a new search to be performed without reloading the <code>graph</code>.</p>
+</li>
+<li><p><strong><code>mode &lt; | &gt;</code></strong><br>Sets the <code>search mode</code>. Use <code>&lt;</code> to search for the <code>lowest-cost</code> path or <code>&gt;</code> to search for the <code>highest-cost</code> path. This can adapt the search logic for analytical or creative use cases.</p>
+</li>
+<li><p><strong><code>weighting &lt;w1&gt; &lt;w2&gt; &lt;w3&gt;</code></strong><br>Sets the relative importance (<code>weights</code>) of the three <code>heuristic</code> dimensions used by the algorithm. This allows fine-tuning of how each attribute influences the pathfinding.</p>
+</li>
+</ul>
+</body></html>

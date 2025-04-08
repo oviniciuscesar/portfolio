@@ -1,0 +1,33 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h1 id="cnn2d">Cnn2d</h1>
+<p>A work-in-progress vanilla implementation of a <code>convolutional autoencoder neural network</code> written in C, developed as an external object for the <code>Pure Data</code>.</p>
+<p>The project aims to integrate machine learning algorithms into the <code>Pure Data</code> environment and to provide a configurable neural network architecture (with no external machine learning dependencies) designed for technical studies and real-time composition applications.</p>
+<h1 id="key-features">Key Features</h1>
+<p>✅ Full autoencoder CNN implementation in plain C — no external libraries used</p>
+<p>🧩 Dynamically creates array-based matrices for each layer:</p>
+<p><code>input</code>, <code>kernels</code>, <code>convolution</code>, <code>pooling</code>, etc</p>
+<p>🧠 Kernel initialization using <code>He</code> or <code>Xavier</code> methods</p>
+<p>🎯 Bias values are initialized with small random values close to zero</p>
+<p>⚙️ Supports optimization using:</p>
+<p><code>SGD</code></p>
+<p><code>Adam</code></p>
+<p>🔧 Configurable components:</p>
+<p><code>Activation function</code></p>
+<p><code>Loss function</code></p>
+<p><code>Pooling method</code></p>
+<p>📐 Automatically calculates matrix dimensions based on:</p>
+<p><code>Number of layers</code></p>
+<p><code>Input size</code></p>
+<p><code>Kernel size</code></p>
+<p><code>Padding</code></p>
+<p><code>Pooling</code></p>
+<p><code>Stride</code></p>
+<p>🚀 The model supports:</p>
+<p><code>Training</code></p>
+<p><code>Evaluation</code></p>
+<p><code>Input reconstruction</code></p>
+<p><code>Latent space visualization</code></p>
+<p>📉 Displays reconstruction error during training</p>
+</body></html>
