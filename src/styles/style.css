@@ -10,6 +10,7 @@ body{
     background-color: #000;
     padding-top: 80px;
 }
+
 .header_section{
     background: url(../images/1666933146584.jpg);
     background-size: 30%;
@@ -34,6 +35,18 @@ body{
     z-index: -1;
 }
 
+@media screen and (max-width: 768px) {
+    .header_section {
+      background-size: contain;
+      background-position: top;
+    }
+  
+    .client_info {
+      padding: 60px 1rem;
+      font-size: 0.95rem;
+    }
+  }
+  
 
   #readme-preview {
     position: relative;
