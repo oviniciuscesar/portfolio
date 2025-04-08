@@ -15,7 +15,7 @@ body{
     background: url(../images/1666933146584.jpg);
     background-size: 30%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 65% center;
     min-height: 100vh;
     animation: fade 1s forwards ease;
     /* opacity: 0; */
