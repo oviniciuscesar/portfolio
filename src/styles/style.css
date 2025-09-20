@@ -736,3 +736,137 @@ canvas {
     }
 }
   
+
+/* ====== MELHORIAS PARA RESPONSIVIDADE E OTIMIZAÇÃO ====== */
+
+/* 1. Torna iframes de vídeo responsivos */
+.composition iframe,
+.researches iframe,
+.pdf-preview iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    display: block;
+    margin: 0 auto 1rem auto;
+    border: none;
+}
+
+/* 2. Ajusta altura dos vídeos em telas pequenas */
+@media (max-width: 700px) {
+    .composition iframe,
+    .researches iframe,
+    .pdf-preview iframe {
+        height: 200px;
+    }
+}
+
+/* 3. Ajusta paddings, margens e fontes para melhor leitura em mobile */
+@media (max-width: 700px) {
+    body {
+        font-size: 16px;
+    }
+    h2, h3 {
+        font-size: 1.2em;
+    }
+    .composition, .composition-recordings, .composition-meta, .researches {
+        padding: 10px;
+        margin: 0 auto 1.5rem auto;
+        max-width: 98vw;
+    }
+    .section-title {
+        padding-top: 90px;
+    }
+    .section-title .watermark {
+        font-size: 3rem;
+    }
+}
+
+/* 4. Ajusta menu responsivo para garantir navegação */
+@media (max-width: 768px) {
+    nav {
+        padding: 0 2%;
+    }
+    .logo img {
+        width: 110px;
+        margin-top: 10px;
+    }
+    ul.menu {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    ul.menu li {
+        display: block;
+        margin: 10px 0;
+    }
+    .bars {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* 5. Garante que o conteúdo não fique escondido atrás do header fixo */
+@media (max-width: 700px) {
+    body {
+        padding-top: 90px;
+    }
+}
+
+/* 6. Ajusta largura dos cards e textos para telas pequenas */
+@media (max-width: 700px) {
+    .composition, .researches {
+        max-width: 98vw;
+        width: 100%;
+        font-size: 1em;
+    }
+    .composition h3, .researches h3 {
+        font-size: 1.1rem;
+    }
+    .composition-description, .researches-description {
+        font-size: 0.98rem;
+    }
+    .vertical-text {
+        font-size: 14px;
+        right: 5vw;
+        padding: 4px;
+    }
+}
+
+/* 7. Melhora acessibilidade e legibilidade dos links */
+a, .composition a, .researches a {
+    word-break: break-all;
+    outline: none;
+}
+a:focus, .composition a:focus, .researches a:focus {
+    outline: 2px solid rgb(110, 37, 65);
+    outline-offset: 2px;
+}
+
+/* 8. Ajusta botões para telas pequenas */
+@media (max-width: 700px) {
+    button {
+        width: 100%;
+        min-width: 120px;
+        font-size: 1em;
+    }
+    .research-buttons a {
+        min-width: 90px;
+        font-size: 13px;
+        padding: 8px 8px;
+    }
+}
+
+/* 9. Garante que o canvas de fundo não cubra o conteúdo */
+canvas#bg-canvas {
+    pointer-events: none;
+}
+
+/* 10. Ajusta o section-label para não sobrepor conteúdo em mobile */
+@media (max-width: 700px) {
+    #section-label {
+        font-size: 9px;
+        right: 0;
+        top: 90%;
+        transform: rotate(90deg) translate(50%, -50%);
+    }
+}
