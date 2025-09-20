@@ -337,8 +337,38 @@
         <h2>Research</h2>
         <span class="watermark">Papers</span>
         </div>
-  
+
         <!-- artigo 1 -->
+        <div class="composition">
+            <h3>conTorchionist: A flexible nomadic library for exploring machinelistening/learning in multiple platforms, languages, and time-contexts</h3>
+            <ul class="composition-meta">
+              <li><strong>Authors:</strong>José Henrique Padovani, Vinícius Cesar de Oliveira</li>
+              <li><strong>Type:</strong>Conference Paper</li>
+              <li><strong>Conference:</strong>19th Brazilian Symposium on Computer Music</li>
+            </ul>
+            <p class="composition-description">
+                The concept of 'machine listening' has profoundly shaped the development of interactive music systems, evolving from symbolic MIDI processing to a wide range of audio analysis techniques. 
+                While the recent proliferation of neural networks has greatly expanded these capabilities, it has also introduced complex processes that often function as opaque 'black boxes', limiting creative exploration. 
+                To address this, we present 'conTorchionist': a flexible, nomadic library designed to foster a more transparent approach to machine listening and learning. Built upon libtorch/PyTorch, 
+                it features a single shared core with dedicated interfaces for diverse environments, including Pure Data, Max, SuperCollider, and Python. 
+                This architecture unifies real-time and non-real-time workflows, leveraging libtorch's strengths in GPU-accelerated audio analysis, signal processing, and neural network inference. 
+                Ultimately, conTorchionist provides an adaptable toolset that empowers researchers and artists to seamlessly bridge different platforms, languages, and time-contexts in their creative and investigative work.
+            </p>
+          
+            <!-- Links com ícones -->
+            <div class="research-buttons">
+              <a href="src/pdf/contorchionist_SBCM2025.pdf" download target="_blank"><i class="fas fa-file-pdf"></i></a>
+              <a href="https://www.researchgate.net/publication/395473005_conTorchionist_A_flexible_nomadic_library_for_exploring_machine_listeninglearning_in_multiple_platforms_languages_and_time-contexts" target="_blank"><i class="fab fa-researchgate"></i></a>
+            </div>
+          
+            <!-- PDF Preview dentro da composição -->
+            <div class="pdf-preview">
+              <iframe src="src/pdf/contorchionist_SBCM2025.pdf#page=1" width="100%" height="600px" style="border: none;"></iframe>
+            </div>
+          </div>
+
+  
+        <!-- artigo 2 -->
         <div class="composition">
             <h3>Map, Trigger, Score, Procedure: machine-listening paradigms in live-electronics</h3>
             <ul class="composition-meta">
@@ -369,7 +399,7 @@
           </div>
 
         
-           <!-- artigo 2 -->
+           <!-- artigo 3 -->
         <div class="composition">
             <h3>Some Compositional Approaches in the Practice of live- electronic music from the perspective of technique and technological tools</h3>
             <ul class="composition-meta">
@@ -399,7 +429,7 @@
             </div>
           </div>
 
-        <!-- artigo 2 -->
+        <!-- artigo 4 -->
         <div class="composition">
             <h3>Solfèges, images, inventions: the different paths of sound imaginary</h3>
             <ul class="composition-meta">
@@ -426,10 +456,10 @@
               <iframe src="src/pdf/solfejo.pdf#page=2" width="100%" height="600px" style="border: none;"></iframe>
             </div>
           </div>
-          
-          <!-- artigo 4 -->
+
+          <!-- artigo 5 -->
         <div class="composition">
-            <h3>Compositional strategies aimed at the use of Machine Listenin and Music information Retrieval in the context of live-electronics</h3>
+            <h3>Compositional strategies aimed at the use of Machine Listening and Music Information Retrieval in the context of live-electronics</h3>
             <ul class="composition-meta">
               <li><strong>Authors:</strong> Vinícius Cesar de Oliveira</li>
               <li><strong>Adivisor:</strong> José Henrique Padovani</li>
@@ -722,6 +752,61 @@
 
         <!-- algoritmo 1 -->
         <div class="composition">
+          <h3><em>conTorchionist</em> A nomadic and flexible library for music composition through the creative exploration of <em>machine learning/listening</em> across multiple platforms, languages ​​, and time-contexts</h3>
+          <!-- <ul class="composition-meta">
+            <li><strong>Authors:</strong> Vinícius Cesar de Oliveira, José Henrique Padovani</li>
+            <li><strong>Type:</strong> Paper</li>
+            <li><strong>Journal:</strong> Revista Vortex</li>
+          </ul> -->
+          <p class="composition-description">
+            <a href="https://github.com/ecrisufmg/contorchionist" target="_blank">conTorchionist</a> is a library that aims to provide a flexible and adaptable toolkit for researchers and artists, enabling exploratory and creative practices in music composition
+            and research involving <em>machine listening</em>, <em>machine learning</em>, and neural networks. 
+            <br><br>
+            The library is based on <em>libtorch</em>, the C++ counterpart of the well-known <em>PyTorch</em> library, and is designed as a single shared core with interfaces for diverse environments, 
+            including <em>Pure Data</em>, <em>Max</em>, <em>SuperCollider</em>, and <em>Python</em>. It integrates <em>machine listening</em> and <em>machine learning</em> for both real-time and non-real-time applications. 
+            <br><br>
+            As it is built on <em>libtorch</em>, <em>conTorchionist</em> leverages the strengths of that library in three key areas: 
+            1 - <em>machine learning</em>, by enabling the training and execution of models created in <em>PyTorch</em>; 2 - audio analysis / processing/ synthesis, by providing techniques such as Fourier transforms, spectrograms, melspectrograms, and the like; 
+            and 3 - tensor-based computation, by facilitating efficient processing on various GPU hardware architectures, such as NVIDIA/CUDA and Apple/MPS.
+          </p>
+
+          <!-- Links com ícones -->
+          <div class="research-buttons">
+            <a href="https://github.com/ecrisufmg/contorchionist" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+          <div>
+            <p><strong>MFCC frames reconstruction with a Convolutional Autoencoder Neural Networks:</strong></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0PbWdBhGKzk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+            <p class="composition-description"></p>
+               Simple example of loading a pre-trained model with <em>torch.ts</em> object from the <em>conTorchionist</em> library for MFCC frames reconstruction task.
+            </p>
+
+            <p><strong>Violin technique classification with a Convolutional Neural Network:</strong></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AbU6onIZAO8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+            <p class="composition-description">
+              Simple example of loading a pre-trained model with <em>torch.ts</em> object from <em>conTorchionist</em> library, to perform a classification of violin techniques in real-time.
+            </p>
+
+            <p><strong>Building and training a Neural Network inside Pure Data with the <em>conTorchionist</em> library:</strong></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4R0uCS_r9QA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+            <p class="composition-description"></p>
+              Simple demonstration of dynamically building and training a Neural Network for instrument classification inside <em>Pure Data</em> using the <em>conTorchionist</em> library.
+            </p>
+
+            </div>
+        </div>
+
+        <!-- algoritmo 2 -->
+        <div class="composition">
           <h3><em>SOM</em> (Kohonen's Self-organized Maps)</h3>
           <!-- <ul class="composition-meta">
             <li><strong>Authors:</strong> Vinícius Cesar de Oliveira, José Henrique Padovani</li>
@@ -753,11 +838,9 @@
             <p class="composition-description">
               Demonstration of the application of the <em>som</em> object in Pure Data to combine sound events detected in real time with sound events previously detected in audio samples.
             </p>
-
-
         </div>
 
-        <!-- algoritmo 1 -->
+        <!-- algoritmo 3 -->
         <div class="composition">
           <h3>Perceptron<h3>
           <p class="composition-description">
@@ -785,7 +868,7 @@
             </p>
         </div>
 
-        <!-- algoritmo 1 -->
+        <!-- algoritmo 4 -->
         <div class="composition">
           <h3><em>2 Dimensional Convolutional Autoencoder</em></h3>
           <!-- <p class="composition-description">
@@ -810,7 +893,7 @@
       </div>  
       
 
-        <!-- algoritmo 1 -->
+        <!-- algoritmo 5 -->
       <div class="composition">
           <h3><em>Multilayer Perceptron</em></h3>
           <!-- <p class="composition-description">
@@ -834,7 +917,7 @@
       </div>  
     </div>
 
-        <!-- algoritmo 1 -->
+        <!-- algoritmo 6 -->
         <div class="composition">
           <h3><em>Search A-Star</em></h3>
           <!-- <p class="composition-description">
